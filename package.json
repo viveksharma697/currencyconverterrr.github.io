@@ -1,0 +1,24 @@
+{
+  "name": "currency-converter.1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viveksharma697/currency-converter.1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viveksharma697/currency-converter.1/issues"
+  },
+  "homepage": "https://github.com/viveksharma697/currency-converter.1#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

@@ -1,0 +1,113 @@
+
+.imgs{
+    width: 350px;
+    height: 150px;
+    margin-top: 100px;
+    border: 2px solid blue;
+    border-radius: 30px;
+    box-shadow: 5px 3px 4px black;
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: slateblue;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px yellow;
+    font-weight: bold;
+
+}
+
+#equal1{
+    width: 15vw;
+    height: 30px;
+    font-size: 25px;
+    border: 2px solid blue;
+    box-shadow: 5px 3px 4px black;
+    border-radius: 5px;
+    margin-top: 5px;
+    
+}
+
+#equal2{
+    width: 15vw;
+    height: 30px;
+    font-size: 25px;
+    border: 2px solid blue;
+    box-shadow: 5px 3px 4px black;
+    border-radius: 5px;
+    
+}
+
+#curr{
+    width: 15vw;
+    height: 33px;
+    border: 2px solid blue;
+    box-shadow: 5px 3px 4px black;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding-top: 4px;
+    width: 170px;
+    background: bisque;
+}
+
+#curr2{
+    width: 15vw;
+    height: 33px;
+    border: 2px solid blue;
+    box-shadow: 5px 3px 4px black;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding-top: 4px;
+    width: 170px;
+    background: bisque;
+}
+
+.rate-container{
+   text-align: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.btn{
+    width: 100px;
+    height: 30px;
+    border: 2px solid blue;
+    border-radius: 4px;
+    box-shadow: 5px 3px 4px black;
+    font-size: 1.1rem;
+    background: bisque;
+    margin-bottom: 15px;
+}
+
+.btn:hover{
+    background-color: yellow;
+    cursor: pointer;
+}
+#curr:hover{
+    background-color: rgb(206, 229, 245);
+    cursor: pointer;
+}
+#curr2:hover{
+    background-color: rgb(206, 229, 245);
+    cursor: pointer;
+}
+
+
+.btn:active {
+    transform: scale(0.98);
+}
+#curr:active {
+    transform: scale(0.98);
+}
+#curr2:active {
+    transform: scale(0.98);
+}
