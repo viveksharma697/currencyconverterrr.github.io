@@ -1,3 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
 
 .imgs{
     width: 350px;
@@ -6,6 +19,7 @@
     border: 2px solid blue;
     border-radius: 30px;
     box-shadow: 5px 3px 4px black;
+    z-index: 6;
 
 }
 
@@ -14,33 +28,37 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
-    background-color: slateblue;
+    color: rgb(255, 0, 0);
+   
     font-size: 1.5rem;
-    text-shadow: 2px 2px 4px yellow;
+    text-shadow: 2px 2px 4px rgb(229, 233, 5);
     font-weight: bold;
+    background-color: rgb(219, 223, 236);
+  
 
 }
 
 #equal1{
-    width: 15vw;
+    width: 20vw;
     height: 30px;
     font-size: 25px;
     border: 2px solid blue;
     box-shadow: 5px 3px 4px black;
     border-radius: 5px;
     margin-top: 5px;
+    padding-left: 8px;
     
 }
 
 #equal2{
-    width: 15vw;
+    width: 20vw;
     height: 30px;
     font-size: 25px;
     border: 2px solid blue;
     box-shadow: 5px 3px 4px black;
     border-radius: 5px;
-    
+    background: bisque;
+    padding-left: 8px;
 }
 
 #curr{
@@ -54,6 +72,7 @@ body{
     padding-top: 4px;
     width: 170px;
     background: bisque;
+    font-size: 15px;
 }
 
 #curr2{
@@ -67,6 +86,7 @@ body{
     padding-top: 4px;
     width: 170px;
     background: bisque;
+    font-size: 15px;
 }
 
 .rate-container{
@@ -111,3 +131,168 @@ body{
 #curr2:active {
     transform: scale(0.98);
 }
+
+.box{
+    width: 102%;
+    height: 100%;
+    text-align: center;
+    margin: -8px;
+    padding: 0;
+    /* background-image: url("https://images.unsplash.com/photo-1591033594798-33227a05780d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1059&q=80");
+    background-repeat: repeat;
+    background-size: contain; */
+    
+}
+
+.box::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1591033594798-33227a05780d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1059&q=80");
+    background-repeat: repeat;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.container{
+    border: 5px solid red;
+    border-radius: 15px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--dUzq0d31--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://store-images.s-microsoft.com/image/apps.43630.14323591455066440.4fa2d451-8a1f-44fd-a536-5fda778060ee.5ad45e3a-3125-4acf-8a9f-8c6dc46f060e%3Fmode%3Dscale%26q%3D90%26h%3D1080%26w%3D1920);
+}
+
+#rate{
+    font-size: 35px;
+    color: white;
+    border: 2px solid blue;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 15px;
+    background-color: rgb(12, 12, 209);
+    border-radius: 25px;
+}
+
+.box p {
+    margin: 15px;
+    padding: 15px;
+}
+
+#navbar {
+    flex-direction: column;
+}
+
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+}
+
+#navbar{
+    display: flex;
+    align-items: left;
+    position: sticky;
+    top: 0px;
+    color: white;
+    height: 50px;
+   
+    
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar ul{
+    display: inline-flex;
+    padding-top: 10px;
+    padding-left: 25px;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+#contact-box form{
+    width:80%;
+}
+#contact{
+    padding-top: 50px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url(https://media.istockphoto.com/photos/hand-of-businessman-holding-mobile-smartphone-with-icon-customer-picture-id1308052781);
+    top: 0;
+    left: 0;
+    background-repeat: repeat-x;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 40px;
+    
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   
+
+}
+
+.form-group{
+    text-align: left;
+}
+
+
+
+
